@@ -14,4 +14,28 @@ public class Game {
 
         }
     }
+
+    public  class  DownAction extends AbstractAction{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+    }
+
+    public  class  LeftAction extends AbstractAction{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+    }
+
+    public  class  RightAction extends AbstractAction{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+    }
 }
