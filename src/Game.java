@@ -14,6 +14,7 @@ public class Game {
     Game(){
         frame = new JFrame("KeyBinding Demo");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(420,420);
 
     }
 
