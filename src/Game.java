@@ -20,6 +20,7 @@ public class Game {
 
         label = new JLabel();
         label.setBackground(Color.red);
+        label.setBounds(100,100,100,100);
 
         frame.setVisible(true);
 
