@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class Game {
@@ -18,6 +19,7 @@ public class Game {
         frame.setLayout(null);
 
         label = new JLabel();
+        label.setBackground(Color.red);
 
         frame.setVisible(true);
 
