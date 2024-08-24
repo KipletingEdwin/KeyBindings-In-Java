@@ -23,6 +23,7 @@ public class Game {
         label.setBounds(100,100,100,100);
         label.setOpaque(true);
 
+        frame.add(label);
         frame.setVisible(true);
 
     }
