@@ -3,6 +3,11 @@ import java.awt.event.ActionEvent;
 
 public class Game {
 
+    Action upAction;
+    Action downAction;
+    Action ledtAction;
+    Action rightAction;
+
     Game(){
 
     }
