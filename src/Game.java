@@ -3,6 +3,9 @@ import java.awt.event.ActionEvent;
 
 public class Game {
 
+    JFrame frame;
+    JLabel label;
+
     Action upAction;
     Action downAction;
     Action ledtAction;
