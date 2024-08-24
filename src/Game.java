@@ -12,6 +12,7 @@ public class Game {
     Action rightAction;
 
     Game(){
+        frame = new JFrame("KeyBinding Demo");
 
     }
 
