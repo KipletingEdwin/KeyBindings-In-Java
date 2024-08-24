@@ -21,6 +21,7 @@ public class Game {
         label = new JLabel();
         label.setBackground(Color.red);
         label.setBounds(100,100,100,100);
+        label.setOpaque(true);
 
         frame.setVisible(true);
 
