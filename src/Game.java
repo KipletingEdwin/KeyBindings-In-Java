@@ -28,56 +28,52 @@ public class Game {
         leftAction = new LeftAction();
         rightAction = new RightAction();
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("UP"),upAction);
-        label.getActionMap().put("upAction",upAction);
+        // Correct key bindings
+        label.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("UP"), "upAction");
+        label.getActionMap().put("upAction", upAction);
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"),downAction);
-        label.getActionMap().put("downAction",downAction);
+        label.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("DOWN"), "downAction");
+        label.getActionMap().put("downAction", downAction);
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("LEFT"),leftAction);
-        label.getActionMap().put("leftAction",leftAction);
+        label.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("LEFT"), "leftAction");
+        label.getActionMap().put("leftAction", leftAction);
 
-        label.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"),rightAction);
-        label.getActionMap().put("rightAction",rightAction);
+        label.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("RIGHT"), "rightAction");
+        label.getActionMap().put("rightAction", rightAction);
 
         frame.add(label);
         frame.setVisible(true);
-
     }
 
-    public  class  UpAction extends AbstractAction{
-
+    public class UpAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
             label.setLocation(label.getX(), label.getY() - 10);
-
         }
     }
 
-    public  class  DownAction extends AbstractAction{
-
+    public class DownAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
             label.setLocation(label.getX(), label.getY() + 10);
-
         }
     }
 
-    public  class  LeftAction extends AbstractAction{
-
+    public class LeftAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
             label.setLocation(label.getX() - 10, label.getY());
-
         }
     }
 
-    public  class  RightAction extends AbstractAction{
-
+    public class RightAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
             label.setLocation(label.getX() + 10, label.getY());
-
         }
+    }
+
+    public static void main(String[] args) {
+        new Game();
     }
 }
