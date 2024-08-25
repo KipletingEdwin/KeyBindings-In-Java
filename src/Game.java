@@ -9,7 +9,7 @@ public class Game {
 
     Action upAction;
     Action downAction;
-    Action ledtAction;
+    Action leftAction;
     Action rightAction;
 
     Game(){
@@ -24,6 +24,7 @@ public class Game {
         label.setOpaque(true);
 
         upAction = new UpAction();
+        downAction = new DownAction();
 
 
 
