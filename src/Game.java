@@ -57,6 +57,7 @@ public class Game {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            label.setLocation(label.getX() + 10, label.getY());
 
         }
     }
