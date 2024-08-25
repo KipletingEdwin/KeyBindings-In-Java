@@ -28,7 +28,7 @@ public class Game {
         leftAction = new LeftAction();
         rightAction = new RightAction();
 
-
+        label.getInputMap().put(KeyStroke.getKeyStroke("UP"),upAction);
 
         frame.add(label);
         frame.setVisible(true);
