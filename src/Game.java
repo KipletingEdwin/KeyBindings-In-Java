@@ -26,6 +26,7 @@ public class Game {
         upAction = new UpAction();
         downAction = new DownAction();
         leftAction = new LeftAction();
+        rightAction = new RightAction();
 
 
 
