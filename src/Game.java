@@ -31,6 +31,9 @@ public class Game {
         label.getInputMap().put(KeyStroke.getKeyStroke("UP"),upAction);
         label.getActionMap().put("upAction",upAction);
 
+        label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"),downAction);
+        label.getActionMap().put("downAction",downAction);
+
         frame.add(label);
         frame.setVisible(true);
 
